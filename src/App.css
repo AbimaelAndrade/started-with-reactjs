@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #7159c1;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.techs {
+  width: 100%;
+  list-style: none;
+}
+
+.tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: #fff;
+  color: #7159c1;
+
+  transition: all ease-in-out 0.3s;
+}
+
+.tech:hover {
+  background: #7159c1;
+  color: #fff;
+}
+
+form {
+  width: 100%;
+}
+
+.btn-trash-tech {
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 5px 10px;
+}
+
+.btn-trash-tech  i{
+  font-size: 18px;
+  color: #7159c1;
+  transition: all ease-in-out 0.3s;
+}
+
+.tech:hover > .btn-trash-tech i{
+  color: #fff;
+}
+
+.new-tech {
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #7159c1;
+}
+
+.new-tech::placeholder {
+  color: #ccc;
+}
+
+.btn-new-tech {
+  font-size: 16px;
+  height: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #7159c1;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn-new-tech i {
+  margin-right: 5px;
+}
+
+.btn-new-tech:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
